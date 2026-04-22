@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Pagina di inserimento dati</h2>
+    <form action="{{url_for('ricevi')}}"  method="post">
+        <table>
+            <tr>
+                <td><label for="">Inserisci il tuo nome</label></td>
+                <td>
+                    <input type="text" name="nomeDigitato">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Digita i tuoi anni</label></td>
+                <td>
+                    <input type="number" name="anniDigitati">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Invia dati al back-end</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
